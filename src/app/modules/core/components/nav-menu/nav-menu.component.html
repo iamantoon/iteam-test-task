@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" *ngIf="role$ | async as role">
+    <button mat-icon-button *ngIf="!isDashboardRoute()" (click)="goBack()">
+        <mat-icon>dashboard</mat-icon>
+    </button>
+    <button mat-icon-button *ngIf="role === Role.Admin && !isAdminRoute()" (click)="goToAdminPage()">
+        <mat-icon>manage_accounts</mat-icon>
+    </button>
+    <span>{{!isAdminRoute() ? 'Dashboard' : 'Admin'}}</span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>

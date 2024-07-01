@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    margin: 10px auto;
+    padding: 5px 25px;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+
+.chart-wrapper {
+    width: 500px;
+}
+
+.statistics-header {
+    text-align: center;
+}
+
+.statistics-heading {
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

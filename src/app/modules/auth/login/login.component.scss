@@ -1,0 +1,17 @@
+.container {
+    width: 500px;
+    margin: 160px auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.heading {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #3f51b5;
+}

@@ -1,0 +1,10 @@
+<mat-form-field class='input'>
+    <mat-label>{{label}}</mat-label>
+    <input [formControl]="control" matInput [type]="hide && type === 'password' ? 'password' : 'text'" required>
+    <button *ngIf="type === 'password'" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="hide ? 'Hide password' : 'Show password'">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    <mat-error *ngIf="control.hasError('required')">
+        {{ label }} is required
+    </mat-error>
+</mat-form-field>

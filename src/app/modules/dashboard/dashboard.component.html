@@ -1,0 +1,10 @@
+<app-nav-menu></app-nav-menu>
+
+<ng-container *ngIf="reportAssessments$ | async as assessments; else loadingError">
+    <app-table [data]="assessments" [columns]="displayedColumns" [routerLinkEnable]="true"></app-table>
+</ng-container>
+
+<ng-template #loadingError>
+    <mat-icon color="warn">error_outline</mat-icon>
+    <h2>Error</h2>
+</ng-template>

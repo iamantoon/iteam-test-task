@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.table-container {
+    overflow-x: auto;
+    display: block;
+}
+  
+.full-width-table {
+    width: 1000px;
+}
+
+.mat-header-cell, .mat-cell {
+    white-space: nowrap;
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.mat-header-cell {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.mat-row {
+    transition: background-color 0.2s ease;
+}
+
+.mat-row:hover {
+    background-color: #f4f4f4;
+}
